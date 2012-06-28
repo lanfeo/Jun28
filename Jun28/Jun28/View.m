@@ -43,9 +43,10 @@
     [self animateAsteroid];
 }
 
+//move asteroid randomly across screen and rotating
 - (void)animateAsteroid {
     
-    [UIView animateWithDuration: 5
+    [UIView animateWithDuration: 3
                           delay: 0
                         options: 	UIViewAnimationOptionCurveEaseInOut
                      animations: ^{
@@ -62,6 +63,28 @@
                      }
      ];
 }
+
+// move ship according to touch
+
+- (void) touchesBegan: (NSSet *) touches withEvent: (UIEvent *) event {
+	if (touches.count > 0) {
+        
+		[UIView animateWithDuration: 0.8
+                              delay: 0.1
+                            options: 	UIViewAnimationOptionCurveEaseInOut
+         | UIViewAnimationOptionAllowUserInteraction
+         | UIViewAnimationOptionBeginFromCurrentState
+                         animations: ^{
+                             //This block describes what the animation should do.
+                             [UIView setAnimationRepeatCount: 1];
+                             ship.center = [[touches anyObject] locationInView: self];
+                             
+                         }
+                         completion: NULL
+         ];
+	}
+}
+
 
 
 
