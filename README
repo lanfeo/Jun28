@@ -1,0 +1,11 @@
+Currently has 1 asteroid rotating around randomly and a blue ship that can be user controlled to fly around
+
+TODO
+
+1. make the blue ship fly a fixed distance in the direction of the touch event instead of to the destination.
+
+2. rotate the ship to face the direction of the touch event
+
+3. move animation code for asteroids so that we can generate multiple asteroids moving around randomly (and remove limit of having hte asteroid on the screen
+
+4. stop animations if ship collides with asteroids
