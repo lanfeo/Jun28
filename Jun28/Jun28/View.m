@@ -36,28 +36,29 @@
                                   arc4random() % (unsigned int)self.bounds.size.width, 
                                   arc4random() % (unsigned int)self.bounds.size.height);
     
+    [self animateAsteroid];
+}
 
-    CGPoint destination = CGPointMake(
-                                arc4random() % (unsigned int)self.bounds.size.width, 
-                                arc4random() % (unsigned int)self.bounds.size.height);
+- (void)animateAsteroid {
     
-    // animate to random destination
-    [UIView animateWithDuration: 20
+    [UIView animateWithDuration: 5
                           delay: 0
                         options: 	UIViewAnimationOptionCurveEaseInOut
                      animations: ^{
-                         //Animate this indefinitely
-                         [UIView setAnimationRepeatCount: 0];
-                         asteroid.center = destination;
+                         [UIView setAnimationRepeatCount: 1];
+                         self.center = CGPointMake(
+                                                   arc4random() % (unsigned int)self.bounds.size.width, 
+                                                   arc4random() % (unsigned int)self.bounds.size.height);;
                          
-                         asteroid.transform = CGAffineTransformMakeRotation(90 * M_PI / 180);
-                                                            
+                         self.transform = CGAffineTransformRotate(self.transform, 90 * M_PI / 180);
+                         
                      }
                      completion: ^(BOOL finished){
+                         [self animateAsteroid];
                      }
      ];
-    
 }
+
 
 
 @end

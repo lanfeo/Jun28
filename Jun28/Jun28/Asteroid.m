@@ -20,21 +20,22 @@
 		self.backgroundColor = [UIColor blackColor];
 
         
-        self.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.layer.borderColor = [UIColor redColor].CGColor;
         self.layer.borderWidth = 3.0f;
         
     }
     return self;
 }
 
-
+/*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void) drawRect: (CGRect) rect
 {
     // Drawing code
-    UIFont *font = [UIFont systemFontOfSize: 20];
-    [@"Hello!" drawAtPoint: CGPointZero withFont: font];
+
 }
+ */
+
 
 @end
