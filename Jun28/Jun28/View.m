@@ -8,6 +8,7 @@
 
 #import "View.h"
 #import "Asteroid.h"
+#import "Ship.h"
 #include <stdlib.h>
 
 @implementation View
@@ -20,8 +21,11 @@
         self.backgroundColor = [UIColor blackColor];
         
         CGRect f = CGRectMake(0, 0, 60, 60);
+        CGRect s = CGRectMake(self.bounds.size.width/2, self.bounds.size.height/2, 30, 30);
         asteroid = [[Asteroid alloc] initWithFrame: f];
         [self addSubview: asteroid];
+        ship = [[Ship alloc] initWithFrame:s];
+        [self addSubview: ship];
     }
     return self;
 }
@@ -46,11 +50,11 @@
                         options: 	UIViewAnimationOptionCurveEaseInOut
                      animations: ^{
                          [UIView setAnimationRepeatCount: 1];
-                         self.center = CGPointMake(
+                         asteroid.center = CGPointMake(
                                                    arc4random() % (unsigned int)self.bounds.size.width, 
                                                    arc4random() % (unsigned int)self.bounds.size.height);;
                          
-                         self.transform = CGAffineTransformRotate(self.transform, 90 * M_PI / 180);
+                         asteroid.transform = CGAffineTransformRotate(self.transform, 90 * M_PI / 180);
                          
                      }
                      completion: ^(BOOL finished){

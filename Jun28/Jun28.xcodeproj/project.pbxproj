@@ -15,6 +15,7 @@
 		4297EC84159CAE0A00030AB5 /* Jun28AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4297EC83159CAE0A00030AB5 /* Jun28AppDelegate.m */; };
 		4297EC90159CAEE400030AB5 /* Asteroid.m in Sources */ = {isa = PBXBuildFile; fileRef = 4297EC8F159CAEE400030AB5 /* Asteroid.m */; };
 		4297EC93159CB01100030AB5 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 4297EC92159CB01100030AB5 /* View.m */; };
+		4297EC9A159CC21500030AB5 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 4297EC99159CC21500030AB5 /* Ship.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4297EC8F159CAEE400030AB5 /* Asteroid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asteroid.m; sourceTree = "<group>"; };
 		4297EC91159CB01100030AB5 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		4297EC92159CB01100030AB5 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		4297EC98159CC21500030AB5 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
+		4297EC99159CC21500030AB5 /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				4297EC83159CAE0A00030AB5 /* Jun28AppDelegate.m */,
 				4297EC91159CB01100030AB5 /* View.h */,
 				4297EC92159CB01100030AB5 /* View.m */,
+				4297EC98159CC21500030AB5 /* Ship.h */,
+				4297EC99159CC21500030AB5 /* Ship.m */,
 				4297EC8E159CAEE400030AB5 /* Asteroid.h */,
 				4297EC8F159CAEE400030AB5 /* Asteroid.m */,
 				4297EC7A159CAE0A00030AB5 /* Supporting Files */,
@@ -167,6 +172,7 @@
 				4297EC84159CAE0A00030AB5 /* Jun28AppDelegate.m in Sources */,
 				4297EC90159CAEE400030AB5 /* Asteroid.m in Sources */,
 				4297EC93159CB01100030AB5 /* View.m in Sources */,
+				4297EC9A159CC21500030AB5 /* Ship.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

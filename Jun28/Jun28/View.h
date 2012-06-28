@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @class Asteroid;
+@class Ship;
 
 @interface View : UIView {
     Asteroid *asteroid;
+    Ship *ship;
 }
 
 @end
